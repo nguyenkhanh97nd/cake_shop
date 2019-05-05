@@ -1,0 +1,1344 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    color:#555;
+}
+section{
+    clear: both;
+    float: left;
+    width: 100%;
+}
+::selection {
+    background: #FC6D6D;
+    color: #FFF;
+}
+input:focus{
+    outline:2px solid #df72a7;
+}
+/** Khung bao bọc container và row sử dụng chung toàn website **/
+.container{
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
+}
+.row{
+	margin: 0 10px;
+}
+/**
+ * CSS cho CONTENT WRAPPER Không thuộc Index==========================================================
+ */
+.content{
+	clear: both;
+	width: 100%;
+	float: left;
+	margin-top:80px;
+	margin-bottom: 20px;
+}
+
+/**
+ * CSS cho NAV BAR Header==================================================================
+ */
+header{
+    position: fixed;
+    width: 100%;
+	z-index: 1000;
+	height: 68px;
+	background-color: #FFF;
+	-webkit-box-shadow: 0 2px 4px 0 rgba(50,50,50,.08);
+    box-shadow: 0 2px 4px 0 rgba(50,50,50,.08);
+}
+
+/** Css cho main menu gồm logo và nav  */
+.main-logo{
+	float: left;
+	width: 200px;
+}
+.main-logo h1 a {
+    color: #ff6d00;
+    font-size: 25px;
+    margin: 5px 0 0 0;
+    float: left;
+}
+h1 {
+    font-size: 2em;
+    margin: .5em 0;
+    color:#333; /*css để ú **/
+}
+nav{
+	float: right;
+	width: 100%l
+}
+nav ul li{
+	display: inline;
+    margin-right: 20px;
+    margin-top: 17px;
+    float: left;
+    text-decoration: none;
+}
+nav li a {
+    color: #555;
+    display: block;
+    line-height: 35px;
+    font-size: 16px;
+    padding: 0;
+}
+nav li a:hover{
+	color: #ff6d00;
+}
+.sub-menu{
+	display: none;
+}
+nav li:hover .sub-menu{
+
+	display: block;
+	position: absolute;
+	width: 200px;
+    background: #fff;
+    padding: 10px!important;
+}
+.sub-menu li{
+	line-height: 30px;
+	width: 100%;
+}
+
+.search-form {
+    display: inline;
+    margin-top: 13px;
+    float: right;
+    border: 1px #f0f0f0 solid;
+    height: 40px;
+    border-radius: 3px;
+}
+.menu-search {
+    float: left;
+    margin: 7px 10px 3px 10px;
+}
+.menu-search form {
+    background: url(../images/search-icon.png) 100% 45% no-repeat;
+    border: 0 solid #eaeaea;
+    border-bottom: 1px;
+    height: 28px;
+    width: 167px;
+    padding: 0 2px;
+}
+.menu-search form input {
+    color: #555;
+    font-size: 13px;
+    text-shadow: 0 0 0 #FFF;
+    background: none;
+    border: none;
+    float: left;
+    outline: 0;
+    padding-top: 8px;
+    font-weight: 400;
+}
+
+
+/**
+ * CSS cho FOOTER===========================================================================
+ */
+
+footer{
+	clear: both;
+	float: left;
+	width: 100%;
+	background-color: #272727;
+}
+.col-1,.col-2{
+	width: 50%;
+	float: left;
+}
+.row-1, .row-2{
+	margin-left: 10px;
+    margin-right: 0px;
+}
+.col-1-1,.col-2-1 {
+    width: 58.33333333%;
+    color: #939393;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+}
+.col-1-2,.col-2-2 {
+    width: 41.66666667%;
+    color: #939393;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+}
+.row-footer {
+	padding: 40px 0px 60px 0px;
+}
+.row-footer h3{
+	padding: 10px 0;
+	font-size: 24px;
+	font-weight: 400;
+}
+.row-footer ul{
+	font-size: 14px;
+	line-height: 22px;
+}
+
+
+
+
+
+/**
+ * CSS cho SIDEBAR======================================================================
+ */
+
+/**Body left**/
+.body-left{
+	float: left;
+	width: 300px;
+	margin-right: 40px;
+}
+.title-category {
+    color: #404040;
+}
+.list-category{
+	margin-top:10px;
+}
+.list-category h3 a {
+    font-size: 15px!important;
+    color: #555;
+    font-weight: lighter;
+}
+.list-cat-menu {
+    display: block;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px 15px;
+}
+.list-cat-menu:hover {
+    color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border-left: 20px solid #f5f5f5;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+/**Body right**/
+.body-right{
+	float: left;
+	width: 860px;
+}
+.list-url{
+	padding: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+.home-url{
+	float: left;
+}
+.list-url a{
+	color: #333;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.list-url a:hover{
+	color:#ff6d00;
+}
+.list-url .space{
+	font-size: 14px;
+    margin-left: 10px;
+    float: left;
+    line-height: 20px;
+    color: #f1004c;
+}
+.other-url{
+	float: left;
+	padding-left: 10px;
+	word-wrap: break-word;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+.other-url a{
+	color: #333;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/**
+ * CONTENT INDEX FEEDBACK================================================================
+ */
+
+#customer-feedback{
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-color:#21AA74;
+}
+.feedback-header{
+    text-align: center;
+        padding-bottom: 75px;
+}
+.feedback-header h2{
+    padding-bottom: 10px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 45px!important;
+    color: #fff;
+}
+.feedback-description{
+    font-size: 16px!important;
+    color: #fff;
+    font-weight: lighter;
+}
+
+
+#feedback{
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 95px;
+    padding-top: 100px;
+    overflow: hidden;
+}
+.feedback-form{
+    clear: both;
+    width: 100%;
+}
+.feedback-form input{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 46px;
+    border-radius: 5px;
+    padding:0px 15px 0px 15px;
+}
+.feedback-row{
+    width: 100%;
+}
+.feedback-name{
+    float: left;
+    width: 360px;
+    padding-right: 25px;
+}
+.feedback-email{
+    float: left;
+    width: 360px;
+    padding-left: 38px;
+    padding-right: 18px;
+}
+.feedback-title{
+    float: right;
+    width: 360px;
+    padding-left: 25px;
+}
+.feedback-row input{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.feedback-content{
+    clear: both;
+    width: 100%;
+}
+.feedback-content textarea{
+    min-width: 1200px;
+    max-width: 1200px; /**Phụ thuộc vào container **/
+    margin-bottom: 20px;
+    border: 0;
+    text-align: left;
+    padding:10px;
+    padding-left: 15px;
+    text-transform: none;
+    min-height: 250px;
+    display: inline-block;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.95);
+    font-size: 16px;
+}
+.feedback-submit{
+    clear: both;
+    float: right;
+    margin-top: 7px;
+    background: #df72a7;
+    color: #FFF;
+    display: inline-block!important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 35px;
+    min-height: 46px;
+    border-radius: 4px !important;
+    border: none;
+    margin-left: 0;
+}
+
+
+/**
+ * CONTENT INDEX REGISTER EMAIL=================================================================
+ */
+#register-email{
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.register-email-header{
+    text-align: center;
+}
+.register-email-header h2{
+    color: #FFF;
+    padding-bottom: 10px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 45px!important;
+}
+.register-email-description{
+    font-size: 16px!important;
+    color:#FFF;
+    font-weight: lighter;
+}
+.register-email-form{
+    margin-top: 15px;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+.register-email-input{
+    border: 0;
+    width: 274px;
+    text-align: left;
+    text-transform: none;
+    min-height: 46px;
+    padding-left: 15px;
+    display: inline-block;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.95);
+}
+.register-email-submit{
+    margin-top: 7px;
+    background: #df72a7;
+    color: #FFF;
+    display: inline-block!important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 35px;
+    min-height: 46px;
+    border-radius: 4px !important;
+    margin: 10px;
+    border: none;
+    margin-left: 0;
+}
+
+
+
+/**
+ * CONTENT INDEX PRODUCT EQUIPMENT=================================================================
+ */
+#product-equipment{
+    padding-top: 15px;
+    color: #404040;
+    background-color: #EDE7D9;
+}
+.product-equipment-header{
+    text-align: center;
+    padding-bottom: 75px;
+}
+.product-equipment-header h2{
+    padding-bottom: 10px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 45px!important;
+}
+.product-equipment-description{
+    font-size: 16px!important;
+    font-weight: lighter;
+}
+
+
+/**
+ * CONTENT INDEX PRODUCT EXP CAKE================================================================
+ */
+#exp-cake{
+    padding-top: 100px;
+    background: #FFF;
+    padding-bottom: 51px;
+}
+.exp-cake-header{
+    padding-bottom: 75px;
+    text-align: center;
+}
+.exp-cake-header h2{
+    padding-bottom: 10px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 45px!important;
+}
+.exp-cake-description{
+    font-size: 16px;
+    font-weight: lighter;
+}
+.exp-cake-content{
+    clear: both;
+    width: 100%;
+}
+.wrapper-content{
+    width: 50%;
+    float: left;
+}
+.feature-content{
+    padding:15px;
+}
+.wrapper-content h3{
+    font-weight: 700;
+    line-height: 25px;
+    color: #404040;
+    font-size: 16px!important;
+}
+.wrapper-content h3 a{
+    color:#404040;
+}
+.feature-info{
+    font-size: 15px;
+    line-height: 28px;
+}
+.wrapper-content p{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: lighter;
+}
+.feature-image img{
+    float: left;
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+
+
+
+/**
+ * CONTENT INDEX CONTACT===========================================================================
+ */
+#contact{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: rgba(0,0,0,0.5);
+}
+.contact-header{
+    padding: 40px 0;
+    text-align: center;
+}
+.contact-header h2{
+    padding-bottom: 10px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 45px!important;
+    color: #FFF;
+}
+.contact-description{
+    font-size: 16px!important;
+    color: #FFF;
+    font-weight: lighter;
+}
+#contact span{
+    font-size: 20px;
+    display: block;
+    font-weight: 700;
+    padding: 20px 0;
+    color: #FFF;
+}
+
+/**
+ * CONTENT INDEX MOSTLY CAKE Sản phẩm bán chạy=================================================
+ */
+#mostly-cake{
+    padding-bottom: 66px;
+    padding-top: 100px;
+    background: #fff;
+}
+.mostly-cake-header{
+    text-align: center;
+    padding-bottom: 75px;
+}
+.mostly-cake-header h2{
+    padding-bottom: 10px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    color: #404040;
+    font-size: 45px!important;
+}
+.mostly-cake-description{
+    font-size: 16px;
+    font-weight: lighter;
+    color: #404040;
+}
+.mostly-wrapper{
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.mostly-image img{
+    width: 260px;
+}
+.info{
+    clear: both;
+}
+.name{
+    float: left;
+    color: #df72a7;
+    font-size: 17px;
+    font-weight: 700
+}
+.price{
+    float: right;
+    color: #34d293;
+    font-size: 17px;
+    font-weight: 700
+}
+.mostly-image a:hover{
+    opacity: 0.5;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+
+
+
+/**
+ * CONTENT INDEX STATISTIC CAKE Thống kê============================================================
+ */
+#statistic-cake{
+    background: rgba(0,0,0,0.5);
+    padding: 100px 0 60px!important;
+    clear: both;
+    color:#FFF;
+}
+.statistic-content{
+    width: 100%;
+    text-align: center;
+}
+.statistic-wrapper{
+    width: 25%;
+    float: left;
+}
+.statistic-wrapper h2{
+    margin-top: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    display: inline-block;
+    font-size: 54pt;
+    line-height: 75px;
+    font-weight: normal;
+    color:#fff;
+}
+.statistic-description{
+    color: #d1d1d1;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+/**
+ * CONTENT INDEX LOGO - SLIDER Phần đầu web======================================================
+ */
+#logo-cake{
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: relative;
+    border-bottom: 3px solid #df72a7;
+    height: 700px;
+    margin-top:68px;
+}
+.logo-content{
+    width: 100%;
+    margin-top: 100px;
+}
+.logo-image{
+    text-align: center;
+}
+
+/**
+ * CONTENT INDEX ABOUT CAKE SHOP  Giới thiệu chung=========================================
+ */
+#about-shop{
+    color: #272727;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: #EDE7D9;
+}
+.about-header{
+    text-align: center;
+    padding-bottom: 75px;
+}
+.about-header h2{
+    padding-bottom: 10px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    color: #404040;
+    font-size: 45px!important;
+}
+.about-description{
+    font-size: 16px;
+    font-weight: lighter;
+    color: #404040;
+}
+.about-content{
+    text-align: center;
+    clear: both;
+    width: 100%;
+}
+.about-logo,.about-slogan,.about-list{
+    width: 400px;
+    float: left;
+}
+.about-logo img{
+    width: 360px;
+}
+.about-slogan img{
+    width: 280px;
+}
+.about-slogan p{
+    padding-top: 15px;
+    text-align: left;
+    color: #272727;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 22px;
+}
+.about-list{
+    text-align: left;
+}
+.skill{
+    display: block;
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.skill-count{
+    display: inline-block;
+    height: 64px;
+    margin-top: 3px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+.skill-count img{
+    vertical-align: middle;
+    width: 22px;
+}
+.skill h6{
+    font-weight: 700;
+    font-size:16px;
+}
+.skill a{
+    color: #df72a7;
+}
+.skill p {
+    line-height: 20px;
+    color: #272727;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.images-shop{
+    clear: both;
+    background: url(../images/home/lines-dark.png) repeat-x center; 
+    margin-bottom: 40px;
+    text-align: center;
+}
+.images-shop h5{
+    font-weight: 700;
+    font-size: 17px;
+}
+.images-shop span{
+    background: #272727;
+    padding: 5px 15px;
+    color: #FFF;
+}
+
+/**
+ * INDEX BACKGROUND IMAGES===================================================
+ */
+#background-index{
+    position:fixed;
+    z-index:-1;
+}
+#background-index img {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+#background-index img.active {
+    z-index:10;
+    opacity:1.0;
+}
+#background-index img.last-active {
+    z-index:9;
+}
+#background-index img {
+    /* Fill background */
+    min-height: 100%;
+    min-width: 1024px;
+ 
+    /* Khi zoom */
+    width: 100%;
+    height: auto;
+ 
+    /* Vị trí */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/**
+ * INDEX SLIDER ABOUT===========================================================
+ */
+
+ #slider{
+    clear: both;
+    margin: 20px auto;
+    width: 880px;
+    height: 132px;
+
+    /*Ẩn đi các slide khác*/
+    overflow: hidden;
+}
+#slider ul{
+    list-style-type: none;
+    /* cho các slide vào 1 hàng*/
+    width: 5000px;
+}
+#slider ul li{
+    float: left;
+    width: 220px;
+    height: 132px;
+    text-align: center;
+    line-height: 132pc;
+}
+#slider ul li img{
+    clear: both;
+    float: left;
+    width: 200px;
+    height: 112px;
+    margin: 10px;
+
+}
+
+
+/**
+ * CONTENT ABOUT PAGE =========================================================
+ */
+.about-page-title{
+    font-size:30px;l
+    line-height:40px;
+    font-weight:700;
+    color:#333!important;
+}
+.about-page-content p{
+    text-align:left;
+    color:#555;
+    font-weight:lighter;
+    line-height:25px;
+    font-size:14px;
+}
+
+/**
+ * CONTENT CONTACT PAGE ====================================================
+ */
+.contact-page-title{
+    font-size:30px;l
+    line-height:40px;
+    font-weight:700;
+    color:#333!important;
+}
+.contact-col-1{
+    float:left;
+    width:41.66666667%;
+}
+.contact-col-2{
+    float:left;
+    width: 25%;
+}
+.contact-col-3{
+    float:left;
+    width:33.33333333%;
+}
+.contact-page-feedback-name,.contact-page-feedback-email,.contact-page-feedback-title,.contact-page-feedback-content{
+    float:left;
+    width:100%;
+}
+.contact-page-feedback-name input,.contact-page-feedback-email input,.contact-page-feedback-title input,.contact-page-feedback-content input{
+    width:80%;
+    margin-bottom: 15px;
+    font-weight:lighter;
+}
+.contact-col-1 input{
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 14px;
+    color:#555;
+    font-weight:lighter;
+}
+.contact-col-1 button{
+    width:60px;
+    height:40px;
+    background-color:#df72a7;
+    color:#FFF;
+    border:none;
+    border-radius:4;
+    font-size:16px;
+    cursor:pointer;
+}
+.contact-col-1 button:hover{
+    background-color:#34d293;
+}
+.contact-col-2 h3,.contact-col-3 h3{
+    font-size: 24px;
+    color:#333;
+    font-weight: lighter;
+}
+.contact-col-2 p,.contact-col-3 p{
+    font-size: 14px;
+    font-weight: 400;
+    color:#555;
+    line-height: 25px;
+}
+
+
+
+/**
+ * Product category
+ */
+.category-product-wrapper{
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.category-product-image img{
+    width: 245px;
+}
+.category-product-info{
+    clear: both;
+}
+.category-product-name{
+    float: left;
+    color: #df72a7;
+    font-size: 17px;
+    font-weight: 700
+}
+.category-product-price{
+    float: right;
+    color: #34d293;
+    font-size: 17px;
+    font-weight: 700
+}
+.category-product-image a:hover{
+    opacity: 0.5;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+
+/**
+ * View chi tiết content
+ */
+
+.heading-view{
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.image-view{
+    width:400px;
+    float:left;
+}
+.image-view img{
+    width:400px;
+}
+.meta-view{
+    float:right;
+    padding:20px;
+    width: 400px;
+}
+.meta-view h2{
+    text-transform: uppercase;
+    padding:20px 0px 10px 0px;
+}
+.meta-view h3{
+    font-size:16px;
+    color:#34d293;
+}
+.meta-view p{
+    padding:10px 0px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.meta-view button{
+    cursor: pointer;
+    color: #fff;
+    background-color: #20AA73;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.meta-view button:hover{
+    background-color:#069059;
+}
+.content-view-title{
+    clear:both;
+    float: left;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    color: #bd0103;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+.content-view-title span{
+    padding:20px;
+    line-height: 30px;
+}   
+.content-view{
+    clear:both;
+    padding:20px;
+    border:1px solid #ddd;
+}
+
+
+
+/**
+ * ========================================================================
+ * PAGINATE
+ */
+
+.paginate{
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.paginate .active{
+    color:#df72a7;
+}
+.paginate li {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.paginate li a{
+    color:#337ab7;
+}
+
+
+
+/**
+ * 
+ * ========================================================================
+ * FORM LOGIN
+ */
+
+.form-login{
+    float:left;
+    width: 50%;
+
+}
+.login-info{
+    float: left;
+    width: 50%;
+}
+.form-login h3{
+    font-size: 24px;
+    line-height: 40px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.submit-login{
+    border:none;
+    border-box:none;
+    float: right;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #df72a7;
+}
+.login-info h3{
+    line-height: 40px;
+    font-size: 24px;
+    text-align: left;
+    margin: 10px 0px 0px 50px;
+}
+.login-info p{
+    font-size: 14px;
+    text-align: left;
+    margin: 10px 0px 0px 50px;
+}
+.login-info a{
+    font-size: 14px;
+    float: left;
+    margin: 10px 0px 0px 50px;
+
+}
+.login-link-register{
+        color: #fff;
+    background-color: #df72a7;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+
+/**
+ *  =================================================================
+ * FORM REGISTER
+ */
+
+.form-register h3{
+    line-height: 40px;
+    font-size: 24px;
+}
+.submit-register{
+    border:none;
+    border-box:none;
+    float: right;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #df72a7;
+}
+
+/**
+ *  =================================================================
+ * FORM INFO USER
+ */
+.form-info-user h3{
+    line-height: 40px;
+    font-size: 24px;
+}
+.form-info-user h4{
+    float:left;
+}
+
+
+/**
+ * ================================================================= 
+ * COMMENT PRODUCT 
+ */
+.comment-product{
+    width: 100%;
+    margin-top:30px;
+}
+.well h4{
+    color: #df72a7;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.well textarea{
+    min-height: 140px;
+    max-height: 140px;
+    min-width: 860px;
+    max-width: 860px;
+}
+.submit-comment{
+    border:none;
+    border-box:none;
+    float: left;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #df72a7;
+}
+.all-comment{
+    clear: both;
+    padding-top:20px;
+    padding-bottom: 50px;
+}
+.comment-item{
+    clear: both;
+    width: 100%;
+    padding-top:10px;
+
+}
+.media-avatar{
+    float:left;
+    margin-right: 10px;
+}
+.media-avatar span{
+    background: #eaeaea;
+    display: inline-block;
+    box-sizing: content-box;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    font-weight: normal;
+    width: 64px;
+    height: 64px;
+    border-radius: 0px;
+    font-size: 32px;
+    line-height: 64px;
+    border: 1px solid #eaeaea;
+}
+.media-heading{
+    font-size:15px;
+}
+.media-body{
+    padding-top:5px;
+    font-size: 14px;
+}
+
+
+
+/**
+ *================================================================= 
+ * CART
+ */
+.cart-name{
+    margin:20px 0px 20px 0px;
+}
+table{
+   min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+th{
+
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.delete-item input{
+    background-color: #df72a7;
+    color:#fff;
+    padding:4px 8px;
+    margin:4px 0px;
+    font-size: 15px;
+    width:50px;
+    border:none;
+    text-align: center;
+    cursor: pointer;
+}
+.cart-item{
+    clear:both;
+    padding:10px 0px;
+}
+.cart-total{
+    padding-left:50px;
+}
+.cart-submit{
+    margin-left: 20px;
+    border:1px solid #ccc;
+    border-box:none;
+    float: left;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #df72a7;
+    cursor:pointer;    
+}
+.cart-submit:hover{
+    background-color:#34d293;
+}
+.cart-money{
+    margin-left: 50px;
+
+    border-box:none;
+    float: left;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #333;
+    background-color: #fff;
+    border:1px solid #ccc;
+    cursor:pointer;   
+}
+.cart-money:hover{
+    background-color:#e6e6e6;
+}
+.submit-buy{
+    border:1px solid #ccc;
+    border-box:none;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #df72a7;
+    cursor:pointer; 
+}
+.submit-buy:hover{
+    background-color:#34d293;
+}
+
+
+
+
+
+
+
+
